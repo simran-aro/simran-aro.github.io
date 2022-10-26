@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+        crossorigin=""/>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <div>
+            <h1>School Explorer: Philadelphia Version</h1>
+        </div>
+
+        <div class="content-container">
+            <div class="map-container">
+                <div id="school-map"></div>
+        </div>
+        <div class="list-container">
+            <label><input type="checkbox" class="grade-checkbox" value ="Elementary">Elementary School</label>
+            <label><input type="checkbox" class="grade-checkbox" value ="Middle">Middle School</label>
+            <label><input type="checkbox" class="grade-checkbox" value ="High">High School</label>
+            <label><input type="checkbox" class="grade-checkbox" value ="Transition/Overage School">Transition/Overage School</label>
+            <input type="text" id="school-name-filter" placeholder="Enter School Name...">
+
+        <ul id = 'school-list'></ul>
+            </div> 
+        </div>
+    </body>
+
+        <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+        integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+        crossorigin=""></script>
+        <script src="js/main.js" type="module"></script>
+</html>
